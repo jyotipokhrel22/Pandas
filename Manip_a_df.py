@@ -11,7 +11,7 @@ diabetes_df = pd.DataFrame(diabetes_dataset.data, columns= diabetes_dataset.feat
 # Adding a column to a DataFrame
 diabetes_df['Insulin'] = np.random.randint(0, 10, size=len(diabetes_df))
 print(diabetes_df.head())
-#
+
 # Removing a row from a DataFrame
 diabetes_df.drop(index = 0, axis= 0, inplace= True)
 print(diabetes_df.head())
